@@ -1,0 +1,77 @@
+body {
+	color: #ffffff;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	background: url(../img/night.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+header {
+	margin: 0 auto;
+	width: 100%;
+}
+
+h1 {
+	width: 30%;
+	font-size: 2em;
+	font-family: 'Droid Serif', serif;
+	padding: 30px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+
+}
+
+h2 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Droid Serif', serif;
+	font-size: 1.5em;
+	margin-top: 70px;
+}
+
+.box {
+	width: 21%;
+	float: left;
+	margin: 0 auto;
+	margin: 70px;
+	margin-top: 40px;
+	padding-bottom: 70px;
+}
+
+.box:hover {
+	opacity: 0.6;
+}
+
+img {
+	width: 100%;
+	padding: 0px;
+	border-radius: 200px;
+}
+
+h3 {
+	font-family: 'Dosis', sans-serif; 
+	font-size: 1.4em;
+	text-align: center;
+	padding: 15px;
+}
+
+
+footer {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	font-family: 'Dosis', sans-serif; 
+	font-size: 1.1em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
