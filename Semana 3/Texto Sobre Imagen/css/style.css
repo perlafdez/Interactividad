@@ -1,0 +1,88 @@
+body {
+	width: 100%;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 80%;
+}
+
+header {
+	margin: 0 auto;
+	width: 100%
+}
+
+.container {
+	width: 28%;
+	float: left;
+	margin: 30px;
+	
+}
+
+h1 {
+	font-size: 4em;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 100px;
+	color: #C28735;
+}
+
+h3 {
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	color: #000000;
+	padding: 40px;
+}
+
+img {
+	width: 100%;
+}
+
+.img {
+  width: 100%;
+  position: relative;
+  border: 10px solid #000000;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .5s;
+  overflow: hidden;
+  height: 0;
+  background: white;
+  text-align: center;
+}
+
+.img:hover .overlay,
+.overlay:hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.img > img {
+  display: block;
+}
+
+p {
+	font-size: 1em;
+	margin: 50px;
+	font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+span {
+	color: #000000;
+	font-size: 3em;
+	font-family: 'Josefin Sans', sans-serif;
+}
