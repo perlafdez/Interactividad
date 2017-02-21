@@ -1,0 +1,87 @@
+body {
+	background-color: #ffffff;
+	background-image: url(../img/back2.png);
+}
+
+.jumbotron {
+	margin-top: 30px;
+	background-color: rgba(255, 255, 255, 1);
+	width: 100%;
+}
+
+.jumbotron h1 {
+	font-size: 4em;
+	font-family: serif;
+	background-color: #ffffff;
+	width: 65%;
+	font-family: 'Lora', serif;
+}
+
+.jumbotron p {
+	font-size: 1.2em;
+	width: 65%;
+	background-color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.row {
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 1);
+	margin: 3px;
+}
+
+.col-lg-4 {
+	padding: 30px;
+}
+
+.col-lg-4 img {
+	border-radius: 10px;
+}
+
+
+.col-lg-4 h2 {
+	font-family: 'Lora', serif;
+	
+}
+
+.col-lg-4 p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.23em;
+}
+
+.btn-default {
+	background-color: #f7b6ba;
+	border: none;
+}
+
+.btn-default:hover {
+	background-color: #ffffff;
+	border: none;
+}
+
+.modal-title {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.modal-body img {
+	width: 100%;
+}
+
+.modal-footer .btn {
+    display: inline;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.modal-footer p {
+    display: inline;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer p {
+	color: #000000;
+	background-color: #ffffff;
+	font-family: 'Lora', serif;
+	font-size: 1.18em;
+	text-align: center;
+	border-radius: 10px;
+}
