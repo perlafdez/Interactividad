@@ -1,0 +1,119 @@
+body {
+	width: 80%;
+	margin: 0 auto;
+	color: black;
+	background-color: white;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+}
+
+header h1 img {
+	border: none;
+	width: 30%;
+}
+
+header nav {
+	width: 100%;
+	text-align: center;
+	background-color: black;
+}
+
+header nav ul {
+	text-align: center;
+	margin: 20px;
+}
+
+header nav ul li {
+	display: inline;
+	text-align: center;
+	font-family: 'Allerta Stencil', sans-serif;
+	margin: 25px;
+	font-size: 1.5em;
+	color: white;
+}
+
+header nav ul li:hover {
+    color: red;
+}
+
+section {
+	width: 28%;
+	float: left;
+	margin: 15px;
+	padding: 25px;
+	border-radius: 5px;
+
+}
+
+section h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+section h2 img {
+	border: none;
+	width: 70%;
+}
+
+section p {
+	font-size: 1.4em;
+	font-family: 'Allerta Stencil', sans-serif;
+	width: 80%;
+	line-height: 30px;
+
+}
+
+.container {
+	width: 64%;
+	float: left;
+	margin: 5px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.container div {
+	width: 18.5%;
+	float: left;
+	margin: 2.8%;
+}
+
+.container h3 {
+	font-size: 1.5em;
+	font-family: 'Allerta Stencil', sans-serif;
+	margin-left: 20px;
+}
+
+.container p {
+	font-family: 'Allerta Stencil', sans-serif;
+	margin-left: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    border: 7px solid red;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	padding: 0.8px;
+	margin-bottom: 10px;
+}
+
+footer p {
+    color: white;
+    font-size: 1.4em;
+	font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+}
