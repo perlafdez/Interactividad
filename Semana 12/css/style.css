@@ -1,0 +1,224 @@
+body {
+	background: #ffbdb6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #ffbdb6, #1f1b53); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #ffbdb6, #1f1b53); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #ffbdb6, #1f1b53); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #ffbdb6, #1f1b53); /* Standard syntax */
+
+  	/*Fade in animation*/	
+
+	-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+
+.row {
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 100%;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.col-lg-4 {
+	padding: 1px;
+	width: 23.2%;
+	margin: 5px;
+
+}
+
+.col-lg-4 img {
+}
+/*HOVER IMG*/
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 13px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.hvrbox-text h2 {
+	font-size: 1.7em;
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+} /*IMG HOVER END*/
+
+
+.col-lg-4 h2 {
+	font-family: 'Lora', serif;
+	
+}
+
+.col-lg-4 p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.23em;
+}
+
+.btn-default {
+	background-color: #f7b6ba;
+	border: none;
+}
+
+.btn-default:hover {
+	background-color: #ffffff;
+	border: none;
+}
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  background: white;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.modal-dialog  {
+	width:100%;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.modal-title {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.modal-body img {
+	width: 100%;
+}
+
+.modal-footer .btn {
+    display: inline;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.modal-footer p {
+    display: inline;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mastfoot {
+	border: 1px solid #ffbdb6;
+	padding-left: 50px;
+  position: fixed;
+}
+
+footer p {
+	color: #000000;
+	background-color: #ffffff;
+	font-family: 'Lora', serif;
+	font-size: 1.18em;
+	text-align: center;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	col-lg-4 h2 {
+		display: none;
+	}
+}
