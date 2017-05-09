@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="res/imagenes/ico-color-01.png">
+    <title>Holosono</title>
+    <meta name="description" content="Sonidos Holofonicos">
+    <meta name="author" content="Perla Fernandez, Claudia Rodriguez, Maria Pena">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+
+    <!-- Bootstrap Library -->
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!-- NavBar -->
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse transparent">
+            <!-- Logo -->
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="res/imagenes/logo-01.png" class="brand-img" alt="LOGO AQUI">
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+    <div class="container">
+        <div class="container-left">
+	        <img src="img/audifonos.png" alt="AUDIFONOS">
+	    </div>
+	    <div class="container-right">
+	    <h2>Ponte los audifonos blabla</h2>
+	    <p>Los sonidos holofonos blablabla blablabla DESCRIPCION AQUI</p>
+	    <button>BOTON PARA SCROWLSPY</button>
+	    </div>
+    </div>
+
+
+<!-- Main content -->
+<div class="container main-content" id="info">
+
+    <!-- Galeria -->
+
+    <h1 class="featurette-heading">Clickea</h1>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="res/imagenes/navidad.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Julio 2016</h4>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img src="res/imagenes/sabores.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Diciembre 2016</h4>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img src="res/imagenes/primera.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Julio 2015</h4>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img src="res/imagenes/navidad.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Julio 2016</h4>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img src="res/imagenes/sabores.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Diciembre 2016</h4>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img src="res/imagenes/primera.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Julio 2015</h4>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img src="res/imagenes/navidad.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Julio 2016</h4>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img src="res/imagenes/sabores.jpg" alt="Galeria de fotos" width="140" height="140">
+            <h4>Diciembre 2016</h4>
+        </div><!-- /.col-lg-4 -->
+
+    </div><!-- /.row -->
+
+
+
+    <!-- /fin de galeria -->
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+        <div class="container">
+                <p class="footer-text">Holosono 2017 &copy;</p>
+        </div>
+</footer>
+
+<!-- JQuery -->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+<!-- BootStrap -->
+<!-- JavaScript min -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+</body>
+</html>

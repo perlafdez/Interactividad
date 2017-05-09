@@ -1,0 +1,226 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+html, body {		
+    width: auto !important;		
+    overflow-x: hidden !important;		
+}
+
+body {
+    /* Margin bottom by footer height */
+    
+}
+
+.brand-img {
+	width: auto;
+    max-width: 150px;
+    height: auto;
+    max-height: 100px;
+    margin: 30px;
+}
+
+/*menu homepage*/
+.navbar-inverse .navbar-nav li a {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/*hover menu homepage*/
+.nav.navbar-nav.navbar-right li a:hover {
+    opacity: 0.5;
+    font-size: 1.5em;
+}
+
+.navbar-toggle {
+    border-style: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+
+    .transparent {
+        background:rgba(69, 69, 69, 0);
+        border-style: none;
+    }
+
+    .semi-transparent {
+        background:rgba(69, 69, 69, 0.5);
+        border-style: none;
+    }
+}
+
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent; /* Quita el color del borde */
+    text-align: center;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: rgba(69, 69, 69, 0.8); /* Cambia el color en hover */
+}
+
+/**********************CAROUSEL*************************/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+.container {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.container-left {
+    width: 45%;
+    border: 1px solid red;
+    margin: 20px;
+    float: left;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.container-left img {
+    border: 1px solid red;
+    padding: 70px;
+}
+
+.container-right {
+    width: 45%;
+    border: 1px solid red;
+    margin: 20px;
+    float: left;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+/*FEATURETTE*/
+
+.featurette-heading {
+	color: #ee8005;
+	font-family: 'NeutraTextBold', sans-serif;
+	margin-bottom: 40px;
+}
+
+button {
+	background-color: #ee8005;
+	color: #ffffff;
+}
+
+button:hover {
+	background-color: #fbc646;
+	color: #ffffff;
+}
+
+.row .col-lg-4 {
+	margin: 0 auto;
+	text-align: center;
+    border: 1px solid red;
+    width: 24%;
+    margin: 7px;
+    margin-bottom: 15px;
+}
+
+.row .col-lg-4 img {
+    width: 100%;
+}
+
+.row {
+	margin-bottom: 50px;
+}
+
+/*********************FOOTER******************/
+
+.footer {
+	position: absolute;
+	bottom: 0;
+    width: 100%;
+    font-family: NeutraTextBook;
+    font-size: 20px;
+    color: white;
+    height: 60px;
+    background-color: #fbc646;
+}
+
+.footer .container .pull-right .fa-lg {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.footer .container .pull-right .fa-lg:hover {
+	color: #ee8005;
+}
+
+.footer-text {
+    padding-top: 20px;
+}
+
+/*********************MEDIA QUERIES***************/
+
+/*NAV BAR*/
+@media (max-width: 767px) {
+
+    .navbar-toggle {
+        float: right;
+        margin-right: 5px;
+        margin-top: 25px;
+    }
+
+    .transparent {
+        background:rgba(69, 69, 69, 0.8);
+        border-style: none;
+    }
+
+    #myNavbar {
+        background: rgba(69, 69, 69, 0.8);
+    }
+
+    .navbar {
+        padding: 0;
+        transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
+    }
+    .navbar-brand {
+        float: left;
+        text-align: center;
+        font-size: 18px;
+        height: 90px;
+        line-height: 2px;
+        padding: 2px;
+    }
+
+}
